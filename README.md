@@ -1,9 +1,11 @@
 # Assignment 2: Prototype Development and Research for Web Application
 ## Project Overview
-This application is a protoype for a climate data based web application. It aims to help event planners and everyday people plan for future events by providing them with accurate weather predictions. This project has a home page as well as a search page. It currently in the prototype phase, meaning not everything has functionality yet, however the layout is there. 
+This application is a prototype for a climate data-based web application. It aims to help event planners and everyday people plan for future events by providing accurate weather predictions. This project has a home page as well as a search page. It is currently in the prototype phase, meaning not everything has functionality yet. However, the layout is there. 
 
 ## Page Description
+Two pages were created for the site. One being a home page and the other being used for searching locations.
 ### Home Page
+The first thing on the home page is a level one heading providing a call to action. Following that is an anchor element that navigates the user from the home page to the search page. This is done by using the (<a>) function with the hypertext reference (here). The next item on the home page is the second-level header. This serves as a title for the table that follows. The table includes reasons why this application can help you. The table has two rows and is styled with stripes, using “table table-striped.” Next on the home page is another level two header. This header is a title for the list that follows. The list is a part of my unique HTML Element that wasn’t discussed in class. I was inspired by other websites that provide lists. This list lists popular destinations. Currently, it is just a list, but in the future, I want to be able to make the list interactive and lead them to search results.
 ### Search Page
 
 ## Research Summary
