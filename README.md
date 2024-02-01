@@ -3,10 +3,12 @@
 This application is a prototype for a climate data-based web application. It aims to help event planners and everyday people plan for future events by providing accurate weather predictions. This project has a home page as well as a search page. It is currently in the prototype phase, meaning not everything has functionality yet. However, the layout is there. 
 
 ## Page Description
-Two pages were created for the site. One being a home page and the other being used for searching locations.
+Two pages were created for the site. One being a home page and the other being used for searching locations. Both use bootstrap and have custom CSS made to enchance the overall look of the application. The bootstrap used was call Mint. The custom CSS can be found in the css/site.css. This CSS sets the background color and adds a blue dotted border around the site. 
 ### Home Page
 The first thing on the home page is a level one heading providing a call to action. Following that is an anchor element that navigates the user from the home page to the search page. This is done by using the (<a>) function with the hypertext reference (here). The next item on the home page is the second-level header. This serves as a title for the table that follows. The table includes reasons why this application can help you. The table has two rows and is styled with stripes, using “table table-striped.” Next on the home page is another level two header. This header is a title for the list that follows. The list is a part of my unique HTML Element that wasn’t discussed in class. I was inspired by other websites that provide lists. This list lists popular destinations. Currently, it is just a list, but in the future, I want to be able to make the list interactive and lead them to search results.
 ### Search Page
+
+The first code on the search page is a second-level header telling the user to start. Next is another second-level header asking the user to type in the desired location to search for. Then, there is a search bar. This search bar currently is not entirely functional. It, however, lets the user type in the bar. Next is a button created with JavaScript, which future purpose is to search the location typed in the search bar.
 
 ## Research Summary
 
@@ -25,6 +27,18 @@ This git hub repository, [WeatherDashboard](https://github.com/kathleendorse/Wea
 
 
 ## Future Enchancements
+In my future applications, I plan to make the search bar functional. I liked it so that the user is taken to another page with the information for their location. Another potential future advancement would be to make the list on the home page functional. The user could click on the location and have the application bring them to a page with the information needed. On this new page, I would like it to provide users with the climate and a search for specific dates.
 
-### Citations
+# Citations
+- [Climate Data](https://en.climate-data.org/)
+- [Visual Crossing](https://www.visualcrossing.com/weather/weather-data-services)
+- [find-weather-app](https://github.com/AMARDEEP115/find-weather-app)
+- [WeatherDashboard](https://github.com/kathleendorse/WeatherDashboard)
+- [W3Schools](https://www.w3schools.com/css/css_border_color.asp)
+- To construct this assignment, I used [ChatGPT 4](https://chat.openai.com) with the following prompt:
+---
+>Add two more properties for this CCS for HTML classes in css/sit.css: background-color: lightblue;
+The output gave me more ideas of what I could add to my application. It was a border. Originally, the border was planned, so I took the inspiration from ChatGPT and used w3schools to add more to it, like changing the color and style to dotted.
+## Reflection on Resources
+To start this project, I used the lecture videos that were posted. The lecture videos, class examples, and my own personal notes were my preferred sources for this project. It helped me get a layout of what I needed for my application. When adjusting or adding other features, I used ChatGPT and W3Schools to search for what I needed. Other resources included the sites listed in the citations. These sites were used to inspire and research what I wanted to include in my application. The challenge I had was finding GIT hubs that were focused on what I was trying to create. Other than that, most information was easy to find
 

@@ -18,5 +18,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: seashell;
+    border-style: dotted;
+    border-color: cadetblue;
+    border-radius: 8px;
 }
