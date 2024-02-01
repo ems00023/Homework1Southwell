@@ -37,7 +37,8 @@ In my future applications, I plan to make the search bar functional. I liked it 
 - [W3Schools](https://www.w3schools.com/css/css_border_color.asp)
 - To construct this assignment, I used [ChatGPT 4](https://chat.openai.com) with the following prompt:
 ---
->Add two more properties for this CCS for HTML classes in css/sit.css: background-color: lightblue;
+ >Add two more properties for this CCS for HTML classes in css/sit.css: background-color: lightblue;
+
 The output gave me more ideas of what I could add to my application. It was a border. Originally, the border was planned, so I took the inspiration from ChatGPT and used w3schools to add more to it, like changing the color and style to dotted.
 ## Reflection on Resources
 To start this project, I used the lecture videos that were posted. The lecture videos, class examples, and my own personal notes were my preferred sources for this project. It helped me get a layout of what I needed for my application. When adjusting or adding other features, I used ChatGPT and W3Schools to search for what I needed. Other resources included the sites listed in the citations. These sites were used to inspire and research what I wanted to include in my application. The challenge I had was finding GIT hubs that were focused on what I was trying to create. Other than that, most information was easy to find
