@@ -1,4 +1,4 @@
-namespace HomeworkAPI
+namespace VacationSiteAPI
 {
     public class WeatherForecast
     {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using HomeworkAPI.Repositories;
-using HomeworkAPI.Entities;
+using VacationSiteAPI.Repositories;
+using VacationSiteAPI.Entities;
 
-namespace HomeworkAPI.Controllers
+namespace VacationSiteAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

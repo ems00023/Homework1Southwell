@@ -1,17 +1,22 @@
-using HomeworkAPI.Data;
-using HomeworkAPI.Repositories;
+using VacationSiteAPI.Data;
+using VacationSiteAPI.Repositories;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<IHotelService, HotelService>();
-builder.Services.AddDbContext<DbContextClass>();
+builder.Services.AddDbContext<DbContextClass>(options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
 builder.Services.AddControllers();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 

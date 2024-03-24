@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HomeworkAPI.Entities
+namespace VacationSiteAPI.Entities
 {
     public class ReservationLines
     {

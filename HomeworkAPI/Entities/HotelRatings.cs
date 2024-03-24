@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace HomeworkAPI.Entities
+namespace VacationSiteAPI.Entities
 {
     public class HotelRatings
     {

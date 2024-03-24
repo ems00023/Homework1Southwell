@@ -1,6 +1,6 @@
-﻿using HomeworkAPI.Entities;
+﻿using VacationSiteAPI.Entities;
 using Microsoft.EntityFrameworkCore;
-namespace HomeworkAPI.Data
+namespace VacationSiteAPI.Data
 {
     public class DbContextClass : DbContext
     {
