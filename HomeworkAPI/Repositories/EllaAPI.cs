@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace VacationSiteAPI.Repositories
 {
-    public class HotelService : IHotelService
+    public class EllaAPI : IEllaAPI
     {
         private readonly DbContextClass _dbContextClass;
-        public HotelService(DbContextClass dbContextClass)
+        public EllaAPI(DbContextClass dbContextClass)
         {
             _dbContextClass = dbContextClass;
         }
@@ -20,6 +20,14 @@ namespace VacationSiteAPI.Repositories
             var latitudeparam = new SqlParameter("@latitude", latitude);
             var hotelDetails = await Task.Run(() => _dbContextClass.Hotel.FromSqlRaw("exec HotelSearchByRadius @longitude,@latitude", longitude, latitude).ToListAsync());
             return hotelDetails;
+        }
+
+        public async Task<List<RoomAvail>> RoomGetAvailabilityByDateRange(DateOnly StartDate, DateOnly EndDate)
+        {
+            var Startdateparam = new SqlParameter("@StartDate", StartDate);
+            var Enddateparam = new SqlParameter("@EndDate", EndDate);
+            var roomDetails = await Task.Run(() => _dbContextClass.RoomAvail.FromSqlRaw("exec RoomGetAvailabilityByDateRange @Startdate,@EndDate", Startdate, EndDate).ToListAsync());
+            return roomDetails;
         }
     }
 }

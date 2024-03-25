@@ -9,8 +9,8 @@ namespace VacationSiteAPI.Controllers
     public class HotelController : Controller
     {
 
-        private readonly IHotelService hotelservice;
-        public HotelController(IHotelService hotelservice)
+        private readonly IEllaAPI hotelservice;
+        public HotelController(IEllaAPI hotelservice)
         { this.hotelservice = hotelservice; }
 
         [HttpGet("HotelSearchByRadius/longitude={longitude}&latitude={latitude}")]
@@ -22,6 +22,14 @@ namespace VacationSiteAPI.Controllers
             }
         return hotelDetails;
         
+        }
+        [HttpGet("RoomGetAvailabilityByDateRange/StartDate={StartDate}&EndDate={EndDate}")]
+        public async Task<List<RoomAvail>> RoomGetAvailabilityByDateRange(DateOnly StartDate, DateOnly EndDate)
+        {
+            var RoomAvail = await hotelservice.RoomGetAvailabilityByDateRange(StartDate, EndDate);
+            if (RoomAvail == null)
+            { }
+            return RoomAvail;
         }
     }
 }
